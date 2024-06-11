@@ -2,5 +2,21 @@
 name = "penboi"
 version = "0.1.0"
 edition = "2021"
+authors = ["Daniil Rose <daniil.rose@posteo.org>", "Jake Byrne", "Ethan Liu"]
+description = "The PenBoi, a Game Boy emulator written in Rust as a summer project."
+homepage = "https://www.daniilrose.com/"
+repository = "https://github.com/TheCatster/penboi"
+license = "GPL-3.0"
+keywords = ["cli", "emulator", "gameboy"]
+categories = ["command-line-utilities", "emulators"]
+readme="README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+clap = { version = "4.3", features = ["derive"] }
+bitflags = { version = "2.3" }
+log = { version = "0.4" }
+fern = { version = "0.6" }
+chrono = { version = "0.4" }
+anyhow = { version = "1.0" }
